@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D765B5D285E80CE005F5B69 /* HollywoodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D765B5C285E80CE005F5B69 /* HollywoodImage.swift */; };
+		5D765B5F285E8100005F5B69 /* HollywoodImageWorkflowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D765B5E285E8100005F5B69 /* HollywoodImageWorkflowAction.swift */; };
+		5D82C3F428550D76006DFE0A /* WelcomeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82C3F328550D76006DFE0A /* WelcomeForm.swift */; };
+		5D9111F32856CC0F0074D09B /* Hollywood_Demo_MusicSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9111F22856CC0F0074D09B /* Hollywood_Demo_MusicSearchApp.swift */; };
+		5D9111F52856CC0F0074D09B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9111F42856CC0F0074D09B /* SearchView.swift */; };
+		5D9111F72856CC0F0074D09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9111F62856CC0F0074D09B /* Assets.xcassets */; };
+		5D9111FA2856CC0F0074D09B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9111F92856CC0F0074D09B /* Preview Assets.xcassets */; };
+		5D9112012856CC360074D09B /* Hollywood in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9112002856CC360074D09B /* Hollywood */; };
+		5D9112032856CC360074D09B /* HollywoodUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9112022856CC360074D09B /* HollywoodUI */; };
+		5D9112062856CDC70074D09B /* SearchMusicStoreWorkflowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9112052856CDC70074D09B /* SearchMusicStoreWorkflowAction.swift */; };
+		5D9112082856CE220074D09B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9112072856CE220074D09B /* SearchResult.swift */; };
+		5D91120A2856CE440074D09B /* SearchResultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9112092856CE440074D09B /* SearchResultListView.swift */; };
+		5D91120C2856D0DA0074D09B /* Debounced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D91120B2856D0DA0074D09B /* Debounced.swift */; };
+		5DEDB37E2854F233002C30B4 /* Hollywood_Demo_GitHubOAuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB37D2854F233002C30B4 /* Hollywood_Demo_GitHubOAuthApp.swift */; };
+		5DEDB3822854F234002C30B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DEDB3812854F234002C30B4 /* Assets.xcassets */; };
+		5DEDB3862854F234002C30B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DEDB3852854F234002C30B4 /* Preview Assets.xcassets */; };
+		5DEDB38D2854F27F002C30B4 /* AuthenticateUserWorkflowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB38C2854F27F002C30B4 /* AuthenticateUserWorkflowAction.swift */; };
+		5DEDB38F2854F287002C30B4 /* ObtainTokensWorkflowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB38E2854F287002C30B4 /* ObtainTokensWorkflowAction.swift */; };
+		5DEDB3912854F28D002C30B4 /* SignInUserWorkflowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB3902854F28D002C30B4 /* SignInUserWorkflowAction.swift */; };
+		5DEDB3932854F298002C30B4 /* AuthenticationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB3922854F298002C30B4 /* AuthenticationContext.swift */; };
+		5DEDB3952854F30A002C30B4 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB3942854F30A002C30B4 /* AppContext.swift */; };
+		5DEDB3982854F347002C30B4 /* Hollywood in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEDB3972854F347002C30B4 /* Hollywood */; };
+		5DEDB39A2854F347002C30B4 /* HollywoodUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEDB3992854F347002C30B4 /* HollywoodUI */; };
+		5DEDB39C2854F3E1002C30B4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB39B2854F3E1002C30B4 /* WelcomeView.swift */; };
+		5DEDB39E2854F41C002C30B4 /* TokenContextFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB39D2854F41C002C30B4 /* TokenContextFormView.swift */; };
+		5DEDB3A02854F4A3002C30B4 /* WelcomeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB39F2854F4A3002C30B4 /* WelcomeBackground.swift */; };
+		5DEDB3A22854F721002C30B4 /* AuthorizationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB3A12854F721002C30B4 /* AuthorizationCode.swift */; };
+		5DEDB3A42854F7BD002C30B4 /* HackGitHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB3A32854F7BD002C30B4 /* HackGitHubApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D360B97286D466200975BCF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5D765B5C285E80CE005F5B69 /* HollywoodImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollywoodImage.swift; sourceTree = "<group>"; };
+		5D765B5E285E8100005F5B69 /* HollywoodImageWorkflowAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollywoodImageWorkflowAction.swift; sourceTree = "<group>"; };
+		5D82C3F328550D76006DFE0A /* WelcomeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeForm.swift; sourceTree = "<group>"; };
+		5D9111F02856CC0F0074D09B /* Hollywood-Demo-MusicSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hollywood-Demo-MusicSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9111F22856CC0F0074D09B /* Hollywood_Demo_MusicSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hollywood_Demo_MusicSearchApp.swift; sourceTree = "<group>"; };
+		5D9111F42856CC0F0074D09B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		5D9111F62856CC0F0074D09B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D9111F92856CC0F0074D09B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D9112052856CDC70074D09B /* SearchMusicStoreWorkflowAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicStoreWorkflowAction.swift; sourceTree = "<group>"; };
+		5D9112072856CE220074D09B /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		5D9112092856CE440074D09B /* SearchResultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultListView.swift; sourceTree = "<group>"; };
+		5D91120B2856D0DA0074D09B /* Debounced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounced.swift; sourceTree = "<group>"; };
+		5DEDB37B2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hollywood-Demo-GitHubOAuth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEDB37D2854F233002C30B4 /* Hollywood_Demo_GitHubOAuthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hollywood_Demo_GitHubOAuthApp.swift; sourceTree = "<group>"; };
+		5DEDB3812854F234002C30B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DEDB3832854F234002C30B4 /* Hollywood_Demo_GitHubOAuth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hollywood_Demo_GitHubOAuth.entitlements; sourceTree = "<group>"; };
+		5DEDB3852854F234002C30B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5DEDB38C2854F27F002C30B4 /* AuthenticateUserWorkflowAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateUserWorkflowAction.swift; sourceTree = "<group>"; };
+		5DEDB38E2854F287002C30B4 /* ObtainTokensWorkflowAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObtainTokensWorkflowAction.swift; sourceTree = "<group>"; };
+		5DEDB3902854F28D002C30B4 /* SignInUserWorkflowAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInUserWorkflowAction.swift; sourceTree = "<group>"; };
+		5DEDB3922854F298002C30B4 /* AuthenticationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationContext.swift; sourceTree = "<group>"; };
+		5DEDB3942854F30A002C30B4 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		5DEDB39B2854F3E1002C30B4 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		5DEDB39D2854F41C002C30B4 /* TokenContextFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenContextFormView.swift; sourceTree = "<group>"; };
+		5DEDB39F2854F4A3002C30B4 /* WelcomeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackground.swift; sourceTree = "<group>"; };
+		5DEDB3A12854F721002C30B4 /* AuthorizationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCode.swift; sourceTree = "<group>"; };
+		5DEDB3A32854F7BD002C30B4 /* HackGitHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGitHubApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D9111ED2856CC0F0074D09B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9112032856CC360074D09B /* HollywoodUI in Frameworks */,
+				5D9112012856CC360074D09B /* Hollywood in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEDB3782854F233002C30B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEDB39A2854F347002C30B4 /* HollywoodUI in Frameworks */,
+				5DEDB3982854F347002C30B4 /* Hollywood in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D9111F12856CC0F0074D09B /* Hollywood-Demo-MusicSearch */ = {
+			isa = PBXGroup;
+			children = (
+				5D9111FE2856CC170074D09B /* App */,
+				5D9112042856CDAE0074D09B /* Workflow */,
+				5D9111F62856CC0F0074D09B /* Assets.xcassets */,
+				5D9111F82856CC0F0074D09B /* Preview Content */,
+			);
+			path = "Hollywood-Demo-MusicSearch";
+			sourceTree = "<group>";
+		};
+		5D9111F82856CC0F0074D09B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5D9111F92856CC0F0074D09B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D9111FE2856CC170074D09B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5D9111F22856CC0F0074D09B /* Hollywood_Demo_MusicSearchApp.swift */,
+				5D9111F42856CC0F0074D09B /* SearchView.swift */,
+				5D9112092856CE440074D09B /* SearchResultListView.swift */,
+				5D91120B2856D0DA0074D09B /* Debounced.swift */,
+				5D765B5C285E80CE005F5B69 /* HollywoodImage.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5D9112042856CDAE0074D09B /* Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				5D765B5E285E8100005F5B69 /* HollywoodImageWorkflowAction.swift */,
+				5D9112052856CDC70074D09B /* SearchMusicStoreWorkflowAction.swift */,
+				5D9112072856CE220074D09B /* SearchResult.swift */,
+			);
+			name = Workflow;
+			path = App/Workflow;
+			sourceTree = "<group>";
+		};
+		5DEDB3572854EE9C002C30B4 = {
+			isa = PBXGroup;
+			children = (
+				5D360B97286D466200975BCF /* README.md */,
+				5DEDB37C2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth */,
+				5D9111F12856CC0F0074D09B /* Hollywood-Demo-MusicSearch */,
+				5DEDB3612854EE9C002C30B4 /* Products */,
+				5DEDB3962854F347002C30B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DEDB3612854EE9C002C30B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DEDB37B2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth.app */,
+				5D9111F02856CC0F0074D09B /* Hollywood-Demo-MusicSearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DEDB37C2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				5DEDB38B2854F269002C30B4 /* App */,
+				5DEDB38A2854F257002C30B4 /* Workflow */,
+				5DEDB3812854F234002C30B4 /* Assets.xcassets */,
+				5DEDB3832854F234002C30B4 /* Hollywood_Demo_GitHubOAuth.entitlements */,
+				5DEDB3842854F234002C30B4 /* Preview Content */,
+			);
+			path = "Hollywood-Demo-GitHubOAuth";
+			sourceTree = "<group>";
+		};
+		5DEDB3842854F234002C30B4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5DEDB3852854F234002C30B4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5DEDB38A2854F257002C30B4 /* Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				5DEDB3A12854F721002C30B4 /* AuthorizationCode.swift */,
+				5DEDB3902854F28D002C30B4 /* SignInUserWorkflowAction.swift */,
+				5DEDB3922854F298002C30B4 /* AuthenticationContext.swift */,
+				5DEDB38C2854F27F002C30B4 /* AuthenticateUserWorkflowAction.swift */,
+				5DEDB38E2854F287002C30B4 /* ObtainTokensWorkflowAction.swift */,
+				5DEDB3A32854F7BD002C30B4 /* HackGitHubApp.swift */,
+			);
+			path = Workflow;
+			sourceTree = "<group>";
+		};
+		5DEDB38B2854F269002C30B4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5DEDB37D2854F233002C30B4 /* Hollywood_Demo_GitHubOAuthApp.swift */,
+				5DEDB3942854F30A002C30B4 /* AppContext.swift */,
+				5DEDB39B2854F3E1002C30B4 /* WelcomeView.swift */,
+				5DEDB39F2854F4A3002C30B4 /* WelcomeBackground.swift */,
+				5D82C3F328550D76006DFE0A /* WelcomeForm.swift */,
+				5DEDB39D2854F41C002C30B4 /* TokenContextFormView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5DEDB3962854F347002C30B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D9111EF2856CC0F0074D09B /* Hollywood-Demo-MusicSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9111FB2856CC0F0074D09B /* Build configuration list for PBXNativeTarget "Hollywood-Demo-MusicSearch" */;
+			buildPhases = (
+				5D9111EC2856CC0F0074D09B /* Sources */,
+				5D9111ED2856CC0F0074D09B /* Frameworks */,
+				5D9111EE2856CC0F0074D09B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hollywood-Demo-MusicSearch";
+			packageProductDependencies = (
+				5D9112002856CC360074D09B /* Hollywood */,
+				5D9112022856CC360074D09B /* HollywoodUI */,
+			);
+			productName = "Hollywood-Demo-MusicSearch";
+			productReference = 5D9111F02856CC0F0074D09B /* Hollywood-Demo-MusicSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DEDB37A2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DEDB3872854F234002C30B4 /* Build configuration list for PBXNativeTarget "Hollywood-Demo-GitHubOAuth" */;
+			buildPhases = (
+				5DEDB3772854F233002C30B4 /* Sources */,
+				5DEDB3782854F233002C30B4 /* Frameworks */,
+				5DEDB3792854F233002C30B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hollywood-Demo-GitHubOAuth";
+			packageProductDependencies = (
+				5DEDB3972854F347002C30B4 /* Hollywood */,
+				5DEDB3992854F347002C30B4 /* HollywoodUI */,
+			);
+			productName = "Hollywood-Demo-GitHubOAuth";
+			productReference = 5DEDB37B2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DEDB3582854EE9C002C30B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					5D9111EF2856CC0F0074D09B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					5DEDB37A2854F233002C30B4 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 5DEDB35B2854EE9C002C30B4 /* Build configuration list for PBXProject "hollywood-demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DEDB3572854EE9C002C30B4;
+			packageReferences = (
+				5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */,
+			);
+			productRefGroup = 5DEDB3612854EE9C002C30B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DEDB37A2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth */,
+				5D9111EF2856CC0F0074D09B /* Hollywood-Demo-MusicSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D9111EE2856CC0F0074D09B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9111FA2856CC0F0074D09B /* Preview Assets.xcassets in Resources */,
+				5D9111F72856CC0F0074D09B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEDB3792854F233002C30B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEDB3862854F234002C30B4 /* Preview Assets.xcassets in Resources */,
+				5DEDB3822854F234002C30B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D9111EC2856CC0F0074D09B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D765B5D285E80CE005F5B69 /* HollywoodImage.swift in Sources */,
+				5D91120A2856CE440074D09B /* SearchResultListView.swift in Sources */,
+				5D9111F52856CC0F0074D09B /* SearchView.swift in Sources */,
+				5D9112062856CDC70074D09B /* SearchMusicStoreWorkflowAction.swift in Sources */,
+				5D91120C2856D0DA0074D09B /* Debounced.swift in Sources */,
+				5D9112082856CE220074D09B /* SearchResult.swift in Sources */,
+				5D9111F32856CC0F0074D09B /* Hollywood_Demo_MusicSearchApp.swift in Sources */,
+				5D765B5F285E8100005F5B69 /* HollywoodImageWorkflowAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEDB3772854F233002C30B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEDB38D2854F27F002C30B4 /* AuthenticateUserWorkflowAction.swift in Sources */,
+				5DEDB3912854F28D002C30B4 /* SignInUserWorkflowAction.swift in Sources */,
+				5DEDB38F2854F287002C30B4 /* ObtainTokensWorkflowAction.swift in Sources */,
+				5DEDB3A22854F721002C30B4 /* AuthorizationCode.swift in Sources */,
+				5DEDB39C2854F3E1002C30B4 /* WelcomeView.swift in Sources */,
+				5DEDB3A42854F7BD002C30B4 /* HackGitHubApp.swift in Sources */,
+				5DEDB3A02854F4A3002C30B4 /* WelcomeBackground.swift in Sources */,
+				5DEDB3952854F30A002C30B4 /* AppContext.swift in Sources */,
+				5DEDB37E2854F233002C30B4 /* Hollywood_Demo_GitHubOAuthApp.swift in Sources */,
+				5D82C3F428550D76006DFE0A /* WelcomeForm.swift in Sources */,
+				5DEDB3932854F298002C30B4 /* AuthenticationContext.swift in Sources */,
+				5DEDB39E2854F41C002C30B4 /* TokenContextFormView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D9111FC2856CC0F0074D09B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hollywood-Demo-MusicSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = KC5B683642;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-MusicSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D9111FD2856CC0F0074D09B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hollywood-Demo-MusicSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = KC5B683642;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-MusicSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DEDB36D2854EE9D002C30B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5DEDB36E2854EE9D002C30B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5DEDB3882854F234002C30B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hollywood-Demo-GitHubOAuth/Hollywood_Demo_GitHubOAuth.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hollywood-Demo-GitHubOAuth/Preview Content\"";
+				DEVELOPMENT_TEAM = KC5B683642;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-GitHubOAuth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DEDB3892854F234002C30B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hollywood-Demo-GitHubOAuth/Hollywood_Demo_GitHubOAuth.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hollywood-Demo-GitHubOAuth/Preview Content\"";
+				DEVELOPMENT_TEAM = KC5B683642;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-GitHubOAuth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D9111FB2856CC0F0074D09B /* Build configuration list for PBXNativeTarget "Hollywood-Demo-MusicSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9111FC2856CC0F0074D09B /* Debug */,
+				5D9111FD2856CC0F0074D09B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DEDB35B2854EE9C002C30B4 /* Build configuration list for PBXProject "hollywood-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEDB36D2854EE9D002C30B4 /* Debug */,
+				5DEDB36E2854EE9D002C30B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DEDB3872854F234002C30B4 /* Build configuration list for PBXNativeTarget "Hollywood-Demo-GitHubOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEDB3882854F234002C30B4 /* Debug */,
+				5DEDB3892854F234002C30B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/briancoyner/hollywood";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D9112002856CC360074D09B /* Hollywood */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
+			productName = Hollywood;
+		};
+		5D9112022856CC360074D09B /* HollywoodUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
+			productName = HollywoodUI;
+		};
+		5DEDB3972854F347002C30B4 /* Hollywood */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
+			productName = Hollywood;
+		};
+		5DEDB3992854F347002C30B4 /* HollywoodUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
+			productName = HollywoodUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5DEDB3582854EE9C002C30B4 /* Project object */;
+}

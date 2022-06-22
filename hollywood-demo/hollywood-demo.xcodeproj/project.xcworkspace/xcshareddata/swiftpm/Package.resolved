@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "hollywood",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/briancoyner/hollywood",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7148923c28bcea4db1af1c91fa863873b481430d"
+      }
+    },
+    {
+      "identity" : "swift-async-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-async-algorithms",
+      "state" : {
+        "branch" : "main",
+        "revision" : "cca423ff03ab657062f3781847e65a867b51bb01"
+      }
+    }
+  ],
+  "version" : 2
+}
