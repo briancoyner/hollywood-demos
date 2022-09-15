@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/briancoyner/hollywood",
       "state" : {
-        "branch" : "master",
-        "revision" : "7148923c28bcea4db1af1c91fa863873b481430d"
+        "branch" : "main",
+        "revision" : "fd7e8ea2ff5d9547ccd10790d1c262543cd5fb44"
       }
     },
     {

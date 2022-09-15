@@ -12,7 +12,7 @@ struct SearchResultListView: View {
             ForEach(results, id: \.self) { result in
                 HStack(alignment: .top, spacing: 8) {
 
-                    // Similar to the AsyncImage API but uses the Hollywood APIs
+                    // Similar to the AsyncImage API but uses the Hollywood APIs as an example/ demo.
                     HollywoodImage(url: URL(string: result.artworkUrl100)!)
 
                     VStack(alignment: .leading) {

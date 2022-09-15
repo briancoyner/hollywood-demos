@@ -630,7 +630,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/briancoyner/hollywood";
 			requirement = {
-				branch = master;
+				branch = main;
 				kind = branch;
 			};
 		};
