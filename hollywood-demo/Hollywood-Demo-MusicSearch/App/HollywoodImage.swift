@@ -1,14 +1,14 @@
 import SwiftUI
 
 import Hollywood
-import HollywoodUI
 
+@MainActor
 struct HollywoodImage: View {
 
     private let urlRequest: URLRequest
 
-    @StateObject
-    private var resource = ContextualActor<Data>()
+    @State
+    private var contextualActor = ContextualActor<Data>()
 
     init(url: URL) {
         self.urlRequest = URLRequest(url: url)
@@ -22,8 +22,8 @@ struct HollywoodImage: View {
 extension HollywoodImage {
 
     var body: some View {
-        ContextualActorView(contextualActor: resource) { state in
-            switch state {
+        Group {
+            switch contextualActor.state {
             case .ready, .busy(_):
                 ProgressView()
             case .success(let data):
@@ -34,8 +34,8 @@ extension HollywoodImage {
                     .aspectRatio(1.0, contentMode: .fill)
             }
         }
-        .task {
-            resource.execute(HollywoodImageWorkflowAction(urlRequest: urlRequest))
+        .onAppear {
+            contextualActor.execute(HollywoodImageWorkflowAction(urlRequest: urlRequest))
         }
     }
 }

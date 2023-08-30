@@ -15,7 +15,6 @@
 		5D9111F72856CC0F0074D09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9111F62856CC0F0074D09B /* Assets.xcassets */; };
 		5D9111FA2856CC0F0074D09B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9111F92856CC0F0074D09B /* Preview Assets.xcassets */; };
 		5D9112012856CC360074D09B /* Hollywood in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9112002856CC360074D09B /* Hollywood */; };
-		5D9112032856CC360074D09B /* HollywoodUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9112022856CC360074D09B /* HollywoodUI */; };
 		5D9112062856CDC70074D09B /* SearchMusicStoreWorkflowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9112052856CDC70074D09B /* SearchMusicStoreWorkflowAction.swift */; };
 		5D9112082856CE220074D09B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9112072856CE220074D09B /* SearchResult.swift */; };
 		5D91120A2856CE440074D09B /* SearchResultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9112092856CE440074D09B /* SearchResultListView.swift */; };
@@ -29,7 +28,6 @@
 		5DEDB3932854F298002C30B4 /* AuthenticationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB3922854F298002C30B4 /* AuthenticationContext.swift */; };
 		5DEDB3952854F30A002C30B4 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB3942854F30A002C30B4 /* AppContext.swift */; };
 		5DEDB3982854F347002C30B4 /* Hollywood in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEDB3972854F347002C30B4 /* Hollywood */; };
-		5DEDB39A2854F347002C30B4 /* HollywoodUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEDB3992854F347002C30B4 /* HollywoodUI */; };
 		5DEDB39C2854F3E1002C30B4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB39B2854F3E1002C30B4 /* WelcomeView.swift */; };
 		5DEDB39E2854F41C002C30B4 /* TokenContextFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB39D2854F41C002C30B4 /* TokenContextFormView.swift */; };
 		5DEDB3A02854F4A3002C30B4 /* WelcomeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDB39F2854F4A3002C30B4 /* WelcomeBackground.swift */; };
@@ -73,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D9112032856CC360074D09B /* HollywoodUI in Frameworks */,
 				5D9112012856CC360074D09B /* Hollywood in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DEDB39A2854F347002C30B4 /* HollywoodUI in Frameworks */,
 				5DEDB3982854F347002C30B4 /* Hollywood in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +86,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D8E961B2A9EC8F200C94869 /* Local Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Local Packages";
+			sourceTree = "<group>";
+		};
 		5D9111F12856CC0F0074D09B /* Hollywood-Demo-MusicSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +141,7 @@
 				5D360B97286D466200975BCF /* README.md */,
 				5DEDB37C2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth */,
 				5D9111F12856CC0F0074D09B /* Hollywood-Demo-MusicSearch */,
+				5D8E961B2A9EC8F200C94869 /* Local Packages */,
 				5DEDB3612854EE9C002C30B4 /* Products */,
 				5DEDB3962854F347002C30B4 /* Frameworks */,
 			);
@@ -223,7 +227,6 @@
 			name = "Hollywood-Demo-MusicSearch";
 			packageProductDependencies = (
 				5D9112002856CC360074D09B /* Hollywood */,
-				5D9112022856CC360074D09B /* HollywoodUI */,
 			);
 			productName = "Hollywood-Demo-MusicSearch";
 			productReference = 5D9111F02856CC0F0074D09B /* Hollywood-Demo-MusicSearch.app */;
@@ -244,7 +247,6 @@
 			name = "Hollywood-Demo-GitHubOAuth";
 			packageProductDependencies = (
 				5DEDB3972854F347002C30B4 /* Hollywood */,
-				5DEDB3992854F347002C30B4 /* HollywoodUI */,
 			);
 			productName = "Hollywood-Demo-GitHubOAuth";
 			productReference = 5DEDB37B2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth.app */;
@@ -365,7 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,7 +398,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,7 +544,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
@@ -576,7 +578,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
@@ -642,20 +644,10 @@
 			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
 			productName = Hollywood;
 		};
-		5D9112022856CC360074D09B /* HollywoodUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
-			productName = HollywoodUI;
-		};
 		5DEDB3972854F347002C30B4 /* Hollywood */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
 			productName = Hollywood;
-		};
-		5DEDB3992854F347002C30B4 /* HollywoodUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
-			productName = HollywoodUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

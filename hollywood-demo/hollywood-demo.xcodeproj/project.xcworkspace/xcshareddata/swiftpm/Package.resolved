@@ -6,16 +6,7 @@
       "location" : "https://github.com/briancoyner/hollywood",
       "state" : {
         "branch" : "main",
-        "revision" : "fd7e8ea2ff5d9547ccd10790d1c262543cd5fb44"
-      }
-    },
-    {
-      "identity" : "swift-async-algorithms",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-async-algorithms",
-      "state" : {
-        "branch" : "main",
-        "revision" : "cca423ff03ab657062f3781847e65a867b51bb01"
+        "revision" : "6b841dadba2ae64966cf5a1ff1dc3f2f8177c3cb"
       }
     }
   ],

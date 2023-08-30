@@ -1,7 +1,6 @@
 import SwiftUI
 
 import Hollywood
-import HollywoodUI
 
 struct SearchResultListView: View {
 

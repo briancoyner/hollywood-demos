@@ -1,18 +1,10 @@
-//
-//  ContentView.swift
-//  Hollywood-Demo-MusicSearch
-//
-//  Created by Brian Coyner on 6/12/22.
-//
-
 import SwiftUI
 
 import Hollywood
-import HollywoodUI
 
 struct SearchView: View {
 
-    @StateObject
+    @State
     private var contextualActor = ContextualActor<SearchResults>()
 
     @StateObject
@@ -22,14 +14,11 @@ struct SearchView: View {
 extension SearchView {
 
     var body: some View {
-        ContextualActorView(contextualActor: contextualActor) { (state: ContextualActor.State) in
-            SearchResultListView(results: results(for: state))
-                .searchable(text: $debounced.input, placement: .automatic, prompt: "Search")
-                .task(id: debounced.output, priority: .userInitiated, {
-                    print("**** \(debounced.input); \(debounced.output)")
-                    contextualActor.execute(SearchMusicStoreWorkflowAction(searchTerm: debounced.output))
-                })
-        }
+        SearchResultListView(results: results(for: contextualActor.state))
+            .searchable(text: $debounced.input, placement: .automatic, prompt: "Search")
+            .onChange(of: debounced.output) { _, _ in
+                contextualActor.execute(SearchMusicStoreWorkflowAction(searchTerm: debounced.output))
+            }
         .navigationTitle("Music Search")
     }
 }

@@ -3,7 +3,7 @@
 ![Header](Hollywood-Demos-Header.png)
 
 The Hollywood Demos repo contains several demo apps showcasing how to build and integrate asynchronous app workflows
-using the [Hollywood](https://github.com/briancoyner/hollywood) and [HollywoodUI](https://github.com/briancoyner/hollywood) libraries.  
+using the [Hollywood](https://github.com/briancoyner/hollywood) libraries.  
 
 ## Demos
 There are 2 demos available (more coming soon):
@@ -16,19 +16,18 @@ There are 2 demos available (more coming soon):
 ### iTunes Music Search
 - [X] Shows how to build an async workflow that:
   - Uses a `ContextualActor` + `AsyncWorkflowAction` to execute an async HTTP request using `URLSession`.
-  - Uses a `ContextualActorView` to update the UI based on the current state of the async workflow.  
   - Presents the search results in a SwiftUI list view.
   - There's also an example showing how to debounce the search text input. 
 
-- [X] Shows how to use a `ContextualActor` and `ContextualActorView` to asynchronously load album art for each search result.
+- [X] Shows how to use a `ContextualActor` to asynchronously load album art for each search result.
   - Similar to the `AsyncImage` API
   
 ### SwiftUI Photos Picker (Transferable)
-- [ ] _Coming soon_: Show how to integrate the new SwiftUI PhotosPicker to asynchronous transfer a selected photo using a `ContextualActor` and `ContextualActorView`. 
+- [ ] _Coming soon_: Show how to integrate the new SwiftUI PhotosPicker to asynchronous transfer a selected photo using a `ContextualActor`.
 
 ## Requirements
-- iOS 16+ (yep, it's leaning on new Swift 5.7 beta features)
-- macOS 12+
+- iOS 17+
+- macOS 14+
 
 
 ## Credits

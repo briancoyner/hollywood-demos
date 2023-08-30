@@ -7,6 +7,10 @@ struct SearchMusicStoreWorkflowAction: WorkflowAction {
     let searchTerm: String
 
     func execute() async throws -> SearchResults {
+        guard !searchTerm.isEmpty else {
+            return SearchResults(results: [])
+        }
+
         let encoded = searchTerm.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
         let url = URL(string: "https://itunes.apple.com/search?term=\(encoded)")!
 
