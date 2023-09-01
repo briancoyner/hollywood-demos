@@ -1,17 +1,23 @@
 import Foundation
+import Combine
 
-final class Debounced<T: Equatable>: ObservableObject {
+@MainActor @Observable
+final class Debounced<T: Equatable> {
 
-    @Published var input: T
-    @Published var output: T
+    @Published @ObservationIgnored
+    var input: T
+
+    var output: T
+
+    private var observation: AnyCancellable?
 
     init(input: T, delay: DispatchQueue.SchedulerTimeType.Stride) {
         self.input = input
         self.output = input
 
-        $input
+        observation = $input
             .removeDuplicates()
             .debounce(for: delay, scheduler: DispatchQueue.main)
-            .assign(to: &$output)
+            .assign(to: \.output, on: self)
     }
 }

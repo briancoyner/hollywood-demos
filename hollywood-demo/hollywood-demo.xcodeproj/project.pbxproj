@@ -10,6 +10,7 @@
 		5D765B5D285E80CE005F5B69 /* HollywoodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D765B5C285E80CE005F5B69 /* HollywoodImage.swift */; };
 		5D765B5F285E8100005F5B69 /* HollywoodImageWorkflowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D765B5E285E8100005F5B69 /* HollywoodImageWorkflowAction.swift */; };
 		5D82C3F428550D76006DFE0A /* WelcomeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82C3F328550D76006DFE0A /* WelcomeForm.swift */; };
+		5D8CEF992AA2958A00C08FA4 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 5D8CEF982AA2958A00C08FA4 /* AsyncAlgorithms */; };
 		5D9111F32856CC0F0074D09B /* Hollywood_Demo_MusicSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9111F22856CC0F0074D09B /* Hollywood_Demo_MusicSearchApp.swift */; };
 		5D9111F52856CC0F0074D09B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9111F42856CC0F0074D09B /* SearchView.swift */; };
 		5D9111F72856CC0F0074D09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9111F62856CC0F0074D09B /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D9112012856CC360074D09B /* Hollywood in Frameworks */,
+				5D8CEF992AA2958A00C08FA4 /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +229,7 @@
 			name = "Hollywood-Demo-MusicSearch";
 			packageProductDependencies = (
 				5D9112002856CC360074D09B /* Hollywood */,
+				5D8CEF982AA2958A00C08FA4 /* AsyncAlgorithms */,
 			);
 			productName = "Hollywood-Demo-MusicSearch";
 			productReference = 5D9111F02856CC0F0074D09B /* Hollywood-Demo-MusicSearch.app */;
@@ -281,6 +284,7 @@
 			mainGroup = 5DEDB3572854EE9C002C30B4;
 			packageReferences = (
 				5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */,
+				5D8CEF972AA2958A00C08FA4 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 			);
 			productRefGroup = 5DEDB3612854EE9C002C30B4 /* Products */;
 			projectDirPath = "";
@@ -628,6 +632,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5D8CEF972AA2958A00C08FA4 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/briancoyner/hollywood";
@@ -639,6 +651,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5D8CEF982AA2958A00C08FA4 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D8CEF972AA2958A00C08FA4 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
 		5D9112002856CC360074D09B /* Hollywood */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;

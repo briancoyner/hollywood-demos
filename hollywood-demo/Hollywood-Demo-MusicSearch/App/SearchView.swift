@@ -2,13 +2,11 @@ import SwiftUI
 
 import Hollywood
 
+@MainActor
 struct SearchView: View {
 
-    @State
-    private var contextualActor = ContextualActor<SearchResults>()
-
-    @StateObject
-    private var debounced = Debounced<String>(input: "", delay: .milliseconds(400))
+    @State private var contextualActor = ContextualActor<SearchResults>()
+    @State private var debounced = Debounced<String>(input: "", delay: .milliseconds(400))
 }
 
 extension SearchView {
@@ -16,8 +14,8 @@ extension SearchView {
     var body: some View {
         SearchResultListView(results: results(for: contextualActor.state))
             .searchable(text: $debounced.input, placement: .automatic, prompt: "Search")
-            .onChange(of: debounced.output) { _, _ in
-                contextualActor.execute(SearchMusicStoreWorkflowAction(searchTerm: debounced.output))
+            .onChange(of: debounced.output) { _, newValue in
+                contextualActor.execute(SearchMusicStoreWorkflowAction(searchTerm: newValue))
             }
         .navigationTitle("Music Search")
     }
