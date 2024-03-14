@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D107E352BAF14E100EB7F51 /* StepByStepWithProgressStallWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D107E342BAF14E100EB7F51 /* StepByStepWithProgressStallWorkflow.swift */; };
+		5D107E372BAF151A00EB7F51 /* NonProgressReportingGenerateNumericString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D107E362BAF151A00EB7F51 /* NonProgressReportingGenerateNumericString.swift */; };
+		5D43B6E12BA1342E000F57AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D43B6E02BA1342E000F57AD /* Assets.xcassets */; };
+		5D43B6E52BA1342E000F57AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D43B6E42BA1342E000F57AD /* Preview Assets.xcassets */; };
+		5D43B6EF2BA13493000F57AD /* Hollywood_Demo_ProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43B6EB2BA13493000F57AD /* Hollywood_Demo_ProgressApp.swift */; };
+		5D43B6F02BA13493000F57AD /* ProgressReportingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43B6EC2BA13493000F57AD /* ProgressReportingView.swift */; };
+		5D43B6F32BA134BF000F57AD /* StepByStepWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43B6E92BA13493000F57AD /* StepByStepWorkflow.swift */; };
+		5D43B6F52BA13539000F57AD /* GenerateNumericString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43B6F42BA13539000F57AD /* GenerateNumericString.swift */; };
+		5D43B6F92BA13BB9000F57AD /* ConcurrentStepsWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43B6F82BA13BB9000F57AD /* ConcurrentStepsWorkflow.swift */; };
+		5D4ED3382BA1C6C200477C4A /* TaskGroupWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4ED3372BA1C6C200477C4A /* TaskGroupWorkflow.swift */; };
+		5D4ED33C2BA249D900477C4A /* CompositeTaskGroupWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4ED33B2BA249D900477C4A /* CompositeTaskGroupWorkflow.swift */; };
+		5D4ED33E2BA2862500477C4A /* Hollywood in Frameworks */ = {isa = PBXBuildFile; productRef = 5D4ED33D2BA2862500477C4A /* Hollywood */; };
+		5D4ED3402BA2945500477C4A /* WonkyWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4ED33F2BA2945500477C4A /* WonkyWorkflow.swift */; };
 		5D765B5D285E80CE005F5B69 /* HollywoodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D765B5C285E80CE005F5B69 /* HollywoodImage.swift */; };
 		5D765B5F285E8100005F5B69 /* HollywoodImageWorkflowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D765B5E285E8100005F5B69 /* HollywoodImageWorkflowAction.swift */; };
 		5D82C3F428550D76006DFE0A /* WelcomeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82C3F328550D76006DFE0A /* WelcomeForm.swift */; };
@@ -37,7 +50,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D107E342BAF14E100EB7F51 /* StepByStepWithProgressStallWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepWithProgressStallWorkflow.swift; sourceTree = "<group>"; };
+		5D107E362BAF151A00EB7F51 /* NonProgressReportingGenerateNumericString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonProgressReportingGenerateNumericString.swift; sourceTree = "<group>"; };
 		5D360B97286D466200975BCF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5D43B6DA2BA1342D000F57AD /* Hollywood-Demo-Progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hollywood-Demo-Progress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D43B6E02BA1342E000F57AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D43B6E22BA1342E000F57AD /* Hollywood_Demo_Progress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hollywood_Demo_Progress.entitlements; sourceTree = "<group>"; };
+		5D43B6E42BA1342E000F57AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D43B6E92BA13493000F57AD /* StepByStepWorkflow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepByStepWorkflow.swift; sourceTree = "<group>"; };
+		5D43B6EB2BA13493000F57AD /* Hollywood_Demo_ProgressApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hollywood_Demo_ProgressApp.swift; sourceTree = "<group>"; };
+		5D43B6EC2BA13493000F57AD /* ProgressReportingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressReportingView.swift; sourceTree = "<group>"; };
+		5D43B6F42BA13539000F57AD /* GenerateNumericString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateNumericString.swift; sourceTree = "<group>"; };
+		5D43B6F82BA13BB9000F57AD /* ConcurrentStepsWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentStepsWorkflow.swift; sourceTree = "<group>"; };
+		5D4ED3372BA1C6C200477C4A /* TaskGroupWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupWorkflow.swift; sourceTree = "<group>"; };
+		5D4ED33B2BA249D900477C4A /* CompositeTaskGroupWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeTaskGroupWorkflow.swift; sourceTree = "<group>"; };
+		5D4ED33F2BA2945500477C4A /* WonkyWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonkyWorkflow.swift; sourceTree = "<group>"; };
 		5D765B5C285E80CE005F5B69 /* HollywoodImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollywoodImage.swift; sourceTree = "<group>"; };
 		5D765B5E285E8100005F5B69 /* HollywoodImageWorkflowAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollywoodImageWorkflowAction.swift; sourceTree = "<group>"; };
 		5D82C3F328550D76006DFE0A /* WelcomeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeForm.swift; sourceTree = "<group>"; };
@@ -68,6 +95,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5D43B6D72BA1342D000F57AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4ED33E2BA2862500477C4A /* Hollywood in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D9111ED2856CC0F0074D09B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,6 +123,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D43B6DB2BA1342D000F57AD /* Hollywood-Demo-Progress */ = {
+			isa = PBXGroup;
+			children = (
+				5D43B6ED2BA13493000F57AD /* App */,
+				5D43B6EA2BA13493000F57AD /* Workflow */,
+				5D43B6E02BA1342E000F57AD /* Assets.xcassets */,
+				5D43B6E22BA1342E000F57AD /* Hollywood_Demo_Progress.entitlements */,
+				5D43B6E32BA1342E000F57AD /* Preview Content */,
+			);
+			path = "Hollywood-Demo-Progress";
+			sourceTree = "<group>";
+		};
+		5D43B6E32BA1342E000F57AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5D43B6E42BA1342E000F57AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D43B6EA2BA13493000F57AD /* Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				5D4ED33B2BA249D900477C4A /* CompositeTaskGroupWorkflow.swift */,
+				5D43B6F82BA13BB9000F57AD /* ConcurrentStepsWorkflow.swift */,
+				5D107E342BAF14E100EB7F51 /* StepByStepWithProgressStallWorkflow.swift */,
+				5D43B6F42BA13539000F57AD /* GenerateNumericString.swift */,
+				5D107E362BAF151A00EB7F51 /* NonProgressReportingGenerateNumericString.swift */,
+				5D43B6E92BA13493000F57AD /* StepByStepWorkflow.swift */,
+				5D4ED3372BA1C6C200477C4A /* TaskGroupWorkflow.swift */,
+				5D4ED33F2BA2945500477C4A /* WonkyWorkflow.swift */,
+			);
+			path = Workflow;
+			sourceTree = "<group>";
+		};
+		5D43B6ED2BA13493000F57AD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5D43B6EB2BA13493000F57AD /* Hollywood_Demo_ProgressApp.swift */,
+				5D43B6EC2BA13493000F57AD /* ProgressReportingView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		5D8E961B2A9EC8F200C94869 /* Local Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +222,7 @@
 				5D360B97286D466200975BCF /* README.md */,
 				5DEDB37C2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth */,
 				5D9111F12856CC0F0074D09B /* Hollywood-Demo-MusicSearch */,
+				5D43B6DB2BA1342D000F57AD /* Hollywood-Demo-Progress */,
 				5D8E961B2A9EC8F200C94869 /* Local Packages */,
 				5DEDB3612854EE9C002C30B4 /* Products */,
 				5DEDB3962854F347002C30B4 /* Frameworks */,
@@ -154,6 +234,7 @@
 			children = (
 				5DEDB37B2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth.app */,
 				5D9111F02856CC0F0074D09B /* Hollywood-Demo-MusicSearch.app */,
+				5D43B6DA2BA1342D000F57AD /* Hollywood-Demo-Progress.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,6 +295,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5D43B6D92BA1342D000F57AD /* Hollywood-Demo-Progress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D43B6E62BA1342E000F57AD /* Build configuration list for PBXNativeTarget "Hollywood-Demo-Progress" */;
+			buildPhases = (
+				5D43B6D62BA1342D000F57AD /* Sources */,
+				5D43B6D72BA1342D000F57AD /* Frameworks */,
+				5D43B6D82BA1342D000F57AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hollywood-Demo-Progress";
+			packageProductDependencies = (
+				5D4ED33D2BA2862500477C4A /* Hollywood */,
+			);
+			productName = "Hollywood-Demo-Progress";
+			productReference = 5D43B6DA2BA1342D000F57AD /* Hollywood-Demo-Progress.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5D9111EF2856CC0F0074D09B /* Hollywood-Demo-MusicSearch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D9111FB2856CC0F0074D09B /* Build configuration list for PBXNativeTarget "Hollywood-Demo-MusicSearch" */;
@@ -262,9 +363,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					5D43B6D92BA1342D000F57AD = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					5D9111EF2856CC0F0074D09B = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -292,11 +396,21 @@
 			targets = (
 				5DEDB37A2854F233002C30B4 /* Hollywood-Demo-GitHubOAuth */,
 				5D9111EF2856CC0F0074D09B /* Hollywood-Demo-MusicSearch */,
+				5D43B6D92BA1342D000F57AD /* Hollywood-Demo-Progress */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5D43B6D82BA1342D000F57AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D43B6E52BA1342E000F57AD /* Preview Assets.xcassets in Resources */,
+				5D43B6E12BA1342E000F57AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D9111EE2856CC0F0074D09B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +432,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5D43B6D62BA1342D000F57AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D43B6F32BA134BF000F57AD /* StepByStepWorkflow.swift in Sources */,
+				5D4ED3402BA2945500477C4A /* WonkyWorkflow.swift in Sources */,
+				5D4ED33C2BA249D900477C4A /* CompositeTaskGroupWorkflow.swift in Sources */,
+				5D4ED3382BA1C6C200477C4A /* TaskGroupWorkflow.swift in Sources */,
+				5D107E352BAF14E100EB7F51 /* StepByStepWithProgressStallWorkflow.swift in Sources */,
+				5D43B6F02BA13493000F57AD /* ProgressReportingView.swift in Sources */,
+				5D43B6F92BA13BB9000F57AD /* ConcurrentStepsWorkflow.swift in Sources */,
+				5D43B6EF2BA13493000F57AD /* Hollywood_Demo_ProgressApp.swift in Sources */,
+				5D107E372BAF151A00EB7F51 /* NonProgressReportingGenerateNumericString.swift in Sources */,
+				5D43B6F52BA13539000F57AD /* GenerateNumericString.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D9111EC2856CC0F0074D09B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +486,95 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		5D43B6E72BA1342E000F57AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "Hollywood-Demo-Progress/Hollywood_Demo_Progress.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Hollywood-Demo-Progress/Preview Content\"";
+				DEVELOPMENT_TEAM = KC5B683642;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-Progress";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D43B6E82BA1342E000F57AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "Hollywood-Demo-Progress/Hollywood_Demo_Progress.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Hollywood-Demo-Progress/Preview Content\"";
+				DEVELOPMENT_TEAM = KC5B683642;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-Progress";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5D9111FC2856CC0F0074D09B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -371,15 +591,20 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-MusicSearch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,15 +627,20 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-MusicSearch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,6 +652,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -451,6 +682,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -482,6 +714,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -511,6 +744,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -539,6 +773,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hollywood-Demo-GitHubOAuth/Hollywood_Demo_GitHubOAuth.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Hollywood-Demo-GitHubOAuth/Preview Content\"";
 				DEVELOPMENT_TEAM = KC5B683642;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -548,10 +783,10 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-GitHubOAuth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -573,6 +808,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Hollywood-Demo-GitHubOAuth/Hollywood_Demo_GitHubOAuth.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Hollywood-Demo-GitHubOAuth/Preview Content\"";
 				DEVELOPMENT_TEAM = KC5B683642;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -582,10 +818,10 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.highrailcompany.Hollywood-Demo-GitHubOAuth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -602,6 +838,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5D43B6E62BA1342E000F57AD /* Build configuration list for PBXNativeTarget "Hollywood-Demo-Progress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D43B6E72BA1342E000F57AD /* Debug */,
+				5D43B6E82BA1342E000F57AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5D9111FB2856CC0F0074D09B /* Build configuration list for PBXNativeTarget "Hollywood-Demo-MusicSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -651,6 +896,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5D4ED33D2BA2862500477C4A /* Hollywood */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEDB3722854F04B002C30B4 /* XCRemoteSwiftPackageReference "hollywood" */;
+			productName = Hollywood;
+		};
 		5D8CEF982AA2958A00C08FA4 /* AsyncAlgorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5D8CEF972AA2958A00C08FA4 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;

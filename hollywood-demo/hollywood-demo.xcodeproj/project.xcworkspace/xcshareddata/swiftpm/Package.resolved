@@ -1,4 +1,5 @@
 {
+  "originHash" : "a1bfe888c8f2cbd8b5e477eb9a0de60ac51fdb6fb1859a731078675dc321050c",
   "pins" : [
     {
       "identity" : "hollywood",
@@ -6,7 +7,7 @@
       "location" : "https://github.com/briancoyner/hollywood",
       "state" : {
         "branch" : "main",
-        "revision" : "6b841dadba2ae64966cf5a1ff1dc3f2f8177c3cb"
+        "revision" : "0d55206b5cc3d3b235d242c47e297b3067de54d9"
       }
     },
     {
@@ -28,5 +29,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

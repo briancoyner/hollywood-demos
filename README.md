@@ -6,7 +6,7 @@ The Hollywood Demos repo contains several demo apps showcasing how to build and 
 using the [Hollywood](https://github.com/briancoyner/hollywood) libraries.  
 
 ## Demos
-There are 2 demos available (more coming soon):
+There are 3 demos available (more coming soon):
 
 ### GitHub OAuth demo
 - [X] Shows how to build an async workflow that authenticates with GitHub. 
@@ -22,8 +22,10 @@ There are 2 demos available (more coming soon):
 - [X] Shows how to use a `ContextualActor` to asynchronously load album art for each search result.
   - Similar to the `AsyncImage` API
   
-### SwiftUI Photos Picker (Transferable)
-- [ ] _Coming soon_: Show how to integrate the new SwiftUI PhotosPicker to asynchronous transfer a selected photo using a `ContextualActor`.
+### Progress Reporting
+- [X] Shows how to build asynchronous workflows that generate progress using `Foundation/Progress`.
+  - Demonstrates using the `Hollywood/ProgressReportingWorkflowAction`.
+
 
 ## Requirements
 - iOS 17+
