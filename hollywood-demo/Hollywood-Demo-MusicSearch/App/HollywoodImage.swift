@@ -24,8 +24,10 @@ extension HollywoodImage {
     var body: some View {
         Group {
             switch contextualActor.state {
-            case .ready, .busy(_):
+            case .ready:
                 ProgressView()
+            case .busy(_, let progress):
+                ProgressView(progress)
             case .success(let data):
                 Image(uiImage: UIImage(data: data)!)
                     .aspectRatio(1.0, contentMode: .fill)
