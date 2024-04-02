@@ -10,7 +10,7 @@ struct TaskGroupWorkflow: CompositeWorkflowAction {
 
     func execute() async throws -> String {
 
-        TaskProgress.progress.totalUnitCount = 3
+        try TaskProgress.safeProgress.totalUnitCount = 3
 
         return try await withThrowingTaskGroup(of: String.self) { group in
             _ = group.addTaskUnlessCancelled {

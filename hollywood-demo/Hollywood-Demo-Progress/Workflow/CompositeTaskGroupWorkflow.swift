@@ -9,7 +9,7 @@ extension CompositeTaskGroupWorkflow {
 
     func execute() async throws -> String {
 
-        TaskProgress.progress.totalUnitCount = 100
+        try TaskProgress.safeProgress.totalUnitCount = 100
 
         let resultA = try await execute(TaskGroupWorkflow(), pendingUnitCount: 20)
         let resultB = try await execute(TaskGroupWorkflow(), pendingUnitCount: 30)

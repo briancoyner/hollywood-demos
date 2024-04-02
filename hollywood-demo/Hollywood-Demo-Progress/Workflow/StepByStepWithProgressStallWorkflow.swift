@@ -17,7 +17,7 @@ struct StepByStepWithProgressStallWorkflow: CompositeWorkflowAction {
         // For a root level action, it's often convenient to set the total unit count to 100. This makes it super
         // easy to set the child action's progress `pendingUnitCount`, such that all child action's `pendingUnitCount`
         // value add up to 100 (or to put it another add up to 100%).
-        TaskProgress.progress.totalUnitCount = 100
+        try TaskProgress.safeProgress.totalUnitCount = 100
 
         // This action produces 25% of the workflow's progress.
         let resultA = try await execute(GenerateNumericString(iterations: 10, delay: .milliseconds(200), pendingUnitCount: 25))
