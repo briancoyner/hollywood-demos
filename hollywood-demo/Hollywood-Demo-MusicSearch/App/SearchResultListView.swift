@@ -12,13 +12,15 @@ struct SearchResultListView: View {
                 HStack(alignment: .top, spacing: 8) {
 
                     // Similar to the AsyncImage API but uses the Hollywood APIs as an example/ demo.
-                    HollywoodImage(url: URL(string: result.artworkUrl100)!)
+                    result.artworkUrl100.map {
+                        HollywoodImage(url: URL(string: $0)!)
+                    }
 
                     VStack(alignment: .leading) {
                         Text(result.artistName)
                             .font(.headline)
 
-                        Text(result.trackCensoredName)
+                        Text(result.trackCensoredName ?? "Unknown Track")
                             .font(.subheadline)
                     }
                 }

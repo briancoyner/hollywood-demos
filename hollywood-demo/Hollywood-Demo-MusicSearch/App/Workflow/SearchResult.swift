@@ -7,6 +7,6 @@ struct SearchResults: Decodable {
 struct SearchResult: Decodable, Hashable {
 
     let artistName: String
-    let artworkUrl100: String
-    let trackCensoredName: String
+    let artworkUrl100: String?
+    let trackCensoredName: String?
 }
