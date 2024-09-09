@@ -8,7 +8,6 @@ struct SignInUserWorkflowAction: CompositeWorkflowAction {
 
     @MainActor
     func execute() async throws -> AppContext {
-
         let presentationAnchor = WebAuthenticationSessionPresentationAnchor(window: findWindow())
         let gitHubApp = HackGitHubApp()
         let code = try await execute(AuthenticateUserWorkflowAction(
@@ -28,6 +27,8 @@ extension SignInUserWorkflowAction {
         return windowScene.windows[0]
     }
 }
+
+// MARK: - ASWebAuthenticationPresentationContextProviding
 
 private final class WebAuthenticationSessionPresentationAnchor: NSObject, ASWebAuthenticationPresentationContextProviding {
 

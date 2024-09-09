@@ -8,8 +8,8 @@ struct SomeError: Error {
 struct AuthenticateUserWorkflowAction: WorkflowAction, @unchecked Sendable {
 
     let clientID: String
-    let presentationContextProvider: ASWebAuthenticationPresentationContextProviding
-    
+    let presentationContextProvider: any ASWebAuthenticationPresentationContextProviding
+
     @MainActor
     func execute() async throws -> AuthorizationCode {
         
@@ -33,7 +33,7 @@ struct AuthenticateUserWorkflowAction: WorkflowAction, @unchecked Sendable {
 
 extension AuthenticateUserWorkflowAction {
 
-    private func makeSession(for url: URL, continuation: CheckedContinuation<AuthorizationCode, Error>) -> ASWebAuthenticationSession {
+    private func makeSession(for url: URL, continuation: CheckedContinuation<AuthorizationCode, any Error>) -> ASWebAuthenticationSession {
 
         return ASWebAuthenticationSession(url: url, callbackURLScheme: "authhub") { callbackURL, callbackError in
 

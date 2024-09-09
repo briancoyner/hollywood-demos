@@ -12,7 +12,6 @@ struct ProgressReportingView: View {
     var body: some View {
         VStack {
             Text(result)
-            
             Spacer()
 
             switch contextualActor.state {

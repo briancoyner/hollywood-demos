@@ -28,6 +28,7 @@ There are 3 demos available (more coming soon):
 
 
 ## Requirements
+- Xcode 16/ Swift 6
 - iOS 17+
 - macOS 14+
 
